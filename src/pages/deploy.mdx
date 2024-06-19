@@ -1,6 +1,5 @@
 import Image from '@/components/Image';
-import {Callout} from 'nextra/components';
-import {Tab, Tabs} from 'nextra/components';
+import { Callout, Tab, Tabs } from 'nextra/components';
 
 # 部署
 
@@ -15,7 +14,7 @@ GitHub Actions 是一种工具，可让你在 GitHub 仓库中执行不同的自
 
 它允许你创建自定义工作流，你可以使用这些工作流来自动化开发过程，例如构建、测试和部署代码
 
-<Image src='/images/actions.png'/>
+<Image src="/images/actions.png" />
 
 GitHub Actions 的配置文件叫做 workflow 文件，存放在代码仓库的`.github/workflows`目录
 
@@ -25,7 +24,7 @@ workflow 文件采用`YAML`格式, 文件名可以任意取, 但是后缀名统�
 
 点击`set up a workflow yourself`创建 workflow
 
-<Image src='/images/workflow.png'/>
+<Image src="/images/workflow.png" />
 
 ```yml copy filename=".github/workflows/config.yml"
 name: Actions CI - Next.js version 12 static site export, GitHub Actions Build and Deploy
@@ -70,7 +69,7 @@ jobs:
 在配置`workflow`会出现一下问题，下面将带你一步步剖析问题和解决问题
 点击`build-and-deploy`查看错误日志
 
-<Image src='/images/build_deploy.png'/>
+<Image src="/images/build_deploy.png" />
 
 ### Bug1
 
@@ -101,7 +100,7 @@ jobs:
     该报错表示找不到`out`文件夹，您需要配置打包后输出的静态文件，打包到`out`文件夹
   </Tab>
   <Tab>
-    ```js copy filename="next.config.js" {6 - 8}
+    ```js copy filename="next.setting.js" {6 - 8}
     const withNextra = require('nextra')({
     theme: 'nextra-theme-docs',
     themeConfig: './theme.config.jsx',
@@ -109,7 +108,8 @@ jobs:
 
     const nextConfig = {
     output: 'export',
-  };
+
+};
 
     module.exports = withNextra(nextConfig);
     ```
@@ -127,7 +127,7 @@ jobs:
     <Image src='/images/fixed_bug3.png'/>
   </Tab>
   <Tab>
-    ```js copy filename="next.config.js" {3 - 5}
+    ```js copy filename="next.setting.js" {3 - 5}
     const nextConfig = {
     output: 'export',
     images: {
@@ -162,11 +162,11 @@ GitHub Pages 必须在每个 repository 的基础上打开, 打开它时，您�
 在浏览器中, 打开 GitHub 里的项目 repository
 在 Settings > Pages > Source 中, 将 Branch 分支设定在`.gh-pages`并点击 Save 保存配置
 
-<Image src='/images/github_pages.png'/>
+<Image src="/images/github_pages.png" />
 
 等待 actions 部署完 Pages，可以点击`Visit site`访问站点
 
-<Image src='/images/deploy_pages.png'/>
+<Image src="/images/deploy_pages.png" />
 
 ## Next.js
 
@@ -185,7 +185,7 @@ Next.js 的`next/image`、`next/link`和`next/router`指定路径是相对于 /�
 
 根据开发环境和生成环境来区分路径，来保证路径的正确性
 
-```js copy filename="next.config.js"
+```js copy filename="next.setting.js"
 const repository = 'SimpleDocs';
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -197,7 +197,7 @@ const nextConfig = {
 
 ### 完整配置
 
-```js copy filename="config.js"
+```js copy filename="setting.js"
 const username = 'BeHer0';
 const repository = 'SimpleDocs';
 
@@ -207,7 +207,7 @@ module.exports = {
 };
 ```
 
-```js copy filename="next.config.js"
+```js copy filename="next.setting.js"
 const { repository } = require('./src/config');
 const path = require('path');
 const isProd = process.env.NODE_ENV === 'production';

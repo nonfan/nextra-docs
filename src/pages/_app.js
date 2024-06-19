@@ -1,4 +1,4 @@
-import { tableWidthAdaptation, setWebsiteIcon } from '@/utils';
+import { setWebsiteIcon } from '@/utils';
 import { useEffect } from 'react';
 import '../globalStyle.scss';
 

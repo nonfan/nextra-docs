@@ -1,4 +1,4 @@
-import {Tab, Tabs} from 'nextra/components';
+import { Tab, Tabs } from 'nextra/components';
 
 # Tabs 组件
 
@@ -14,7 +14,7 @@ import {Tab, Tabs} from 'nextra/components';
 ### 默认
 
 ```js copy
-import {Tab, Tabs} from 'nextra/components';
+import { Tab, Tabs } from 'nextra/components';
 
 <Tabs items={['pnpm', 'npm', 'yarn']}>
   <Tab>**pnpm**: 速度快、节省磁盘空间的软件包管理器</Tab>
@@ -28,16 +28,16 @@ import {Tab, Tabs} from 'nextra/components';
 您可以使用`defaultIndex`属性设置默认选项卡索引：
 
 ```js copy
-import {Tabs} from 'nextra/components';
+import { Tabs } from 'nextra/components';
 
-<Tabs items={['pnpm', 'npm', 'yarn']} defaultIndex='1'>
+<Tabs items={['pnpm', 'npm', 'yarn']} defaultIndex="1">
   ...
 </Tabs>;
 ```
 
 如果你希望`npm`为默认选项卡，可设置`defaultIndex="1"`, 就像这样：
 
-<Tabs items={['pnpm', 'npm', 'yarn']} defaultIndex='1'>
+<Tabs items={['pnpm', 'npm', 'yarn']} defaultIndex="1">
   <Tab>**pnpm**: 速度快、节省磁盘空间的软件包管理器</Tab>
   <Tab>**npm** 是 Node 包管理器</Tab>
   <Tab>**Yarn** 是一个包管理器，同时也是项目管理器</Tab>

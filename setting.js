@@ -1,4 +1,4 @@
-const username = 'agoodbook';
+const username = 'nonfan';
 const repository = 'nextra-docs';
 
 module.exports = {

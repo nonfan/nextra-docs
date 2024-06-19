@@ -1,7 +1,7 @@
 import Head from '@/components/Head';
 import LastUpdateDate from '@/components/LastUpdateDate';
 import Logo from '@/components/Logo';
-import { repository, username } from '@/config';
+import { repository, username } from './setting';
 
 export default {
   logo: Logo,
@@ -34,9 +34,7 @@ export default {
   footer: {
     text: (
       <div className="sl-footer">
-        <span>一个简单的人，做一件简单的事😀</span>
-        <br />
-        <span>Copyright {new Date().getFullYear()} © MoFan.</span>
+        <span>Copyright © 2024 by MoFan. Licensed under CC BY-NC 4.0.</span>
       </div>
     ),
   },

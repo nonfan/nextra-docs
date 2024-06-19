@@ -1,6 +1,5 @@
 import Image from '@/components/Image';
-import { Callout } from 'nextra/components';
-import { Tab, Tabs } from 'nextra/components';
+import { Callout, Tab, Tabs } from 'nextra/components';
 
 # 主题配置
 
@@ -369,50 +368,50 @@ export default {
 
 <Tabs items={['theme.config.jsx', 'pages/_meta.json']}>
 
-<Tab>
-  ```jsx copy
-  export default {
+  <Tab>
+    ```jsx copy
+    export default {
     sidebar:{
     titleComponent({title, type}) {
-      if (type === 'separator') {
-        return (
-          <div style={{background: 'cyan', textAlign: 'center'}}>{title}</div>
-        );
-      }
-      return <>{title}</>
-      },
-    },
+    if (type === 'separator') {
+    return (
+    <div style={{background: 'cyan', textAlign: 'center'}}>{title}</div>
+  );
+  }
+  return <>{title}</>
+  },
+  },
   };
   ```
 </Tab>
 
 <Tab>
-```json copy
-{
-  "*": {
+  ```json copy
+  {
+    "*": {
     "theme": {
-      "breadcrumb": false
-    }
+    "breadcrumb": false
+  }
   },
-  "index": {
-  "title": "介绍"
+    "index": {
+    "title": "介绍"
   },
-  "theme": {
-  "title": "文档主题",
-  "theme": {
+    "theme": {
+    "title": "文档主题",
+    "theme": {
     "breadcrumb": true
   }
-},
-  "build-ins": {
-  "title": "内置组件",
-  "theme": {
+  },
+    "build-ins": {
+    "title": "内置组件",
+    "theme": {
     "breadcrumb": true
   }
-},
-  "deploy": "部署Action自动化",
-  "zero-configuration": "快速上手"
-}
-```
+  },
+    "deploy": "部署Action自动化",
+    "zero-configuration": "快速上手"
+  }
+  ```
 </Tab>
 </Tabs>
 

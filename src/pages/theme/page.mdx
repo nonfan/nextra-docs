@@ -1,4 +1,4 @@
-import {FileTree} from 'nextra/components';
+import { FileTree } from 'nextra/components';
 import Image from '@/components/Image';
 
 # 页面配置
@@ -14,11 +14,11 @@ import Image from '@/components/Image';
 侧边栏中显示的页面标题和顺序应在`_meta.json`文件中配置为键值对。例如，如果您有以下文件结构：
 
 <FileTree>
-  <FileTree.Folder name='pages' defaultOpen>
-    <FileTree.File name='_meta.json'/>
-    <FileTree.File name='index.mdx'/>
-    <FileTree.File name='contact.mdx'/>
-    <FileTree.File name='about.mdx'/>
+  <FileTree.Folder name="pages" defaultOpen>
+    <FileTree.File name="_meta.json" />
+    <FileTree.File name="index.mdx" />
+    <FileTree.File name="contact.mdx" />
+    <FileTree.File name="about.mdx" />
   </FileTree.Folder>
 </FileTree>
 您可以通过```_meta.json```文件定义页面在侧边栏中的显示方式
@@ -36,15 +36,15 @@ import Image from '@/components/Image';
 文件夹的配置方式与页面相同。例如：
 
 <FileTree>
-  <FileTree.Folder name='pages' defaultOpen>
-    <FileTree.File name='_meta.json'/>
-    <FileTree.File name='index.mdx'/>
-    <FileTree.File name='contact.mdx'/>
-    <FileTree.File name='about.mdx'/>
-    <FileTree.Folder name='fruits' defaultOpen>
-      <FileTree.File name='_meta.json'/>
-      <FileTree.File name='apple.mdx'/>
-      <FileTree.File name='banana.mdx'/>
+  <FileTree.Folder name="pages" defaultOpen>
+    <FileTree.File name="_meta.json" />
+    <FileTree.File name="index.mdx" />
+    <FileTree.File name="contact.mdx" />
+    <FileTree.File name="about.mdx" />
+    <FileTree.Folder name="fruits" defaultOpen>
+      <FileTree.File name="_meta.json" />
+      <FileTree.File name="apple.mdx" />
+      <FileTree.File name="banana.mdx" />
     </FileTree.Folder>
   </FileTree.Folder>
 </FileTree>
@@ -135,7 +135,7 @@ import Image from '@/components/Image';
 
 它的效果像这样：
 
-<Image src='/images/navbar.png' width={400}/>
+<Image src="/images/navbar.png" width={400} />
 
 ### 菜单
 
