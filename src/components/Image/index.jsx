@@ -2,7 +2,7 @@ import { getAvailablePath } from '@/utils';
 import { Image } from 'antd';
 import style from './index.module.scss';
 
-export function Index({ src, width, height }) {
+export function CustomImage({ src, width, height }) {
   return (
     <div className={style.container}>
       <Image
@@ -17,4 +17,4 @@ export function Index({ src, width, height }) {
   );
 }
 
-export default Index;
+export default CustomImage;

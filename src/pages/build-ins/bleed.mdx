@@ -1,5 +1,6 @@
 import { Bleed } from 'nextra-theme-docs';
 import Image from '@/components/Image';
+import VideoPlayer from '@/components/VideoPlayer';
 
 # Bleed 组件
 
@@ -28,9 +29,7 @@ import Image from '@/components/Image';
 例如，您可以将文本、图像、视频或任何组件放入：
 
 <Bleed>
-  <video controls>
-    <source src="/videos/videoplayback.mp4" type="video/mp4"></source>
-  </video>
+  <VideoPlayer src="/videos/videoplayback.mp4" width="100%" />
 </Bleed>
 
 您甚至可以使用`<Bleed full>`使其完全填充页面，除了侧边栏
