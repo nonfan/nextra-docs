@@ -1,0 +1,31 @@
+:root {
+  border-color: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  border-color: #282828;
+}
+
+// 覆盖默认table样式
+table {
+  display: table !important;
+  width: 100% !important;
+  scrollbar-gutter: unset !important;
+  overflow: hidden !important;
+
+
+  thead th {
+    text-align: left;
+  }
+}
+
+.sl-footer {
+  span:first-child {
+    font-size: 18px;
+    font-style: italic;
+  }
+  span:last-child {
+    font-size: 12px;
+    font-style: italic;
+  }
+}
